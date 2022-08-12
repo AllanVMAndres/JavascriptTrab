@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,100 +8,102 @@
     <title>Herois</title>
     <!-- <link rel="stylesheeet" type="text/css" href="css/style.css"> -->
 </head>
+
 <body>
     <script language="javascript">
-        universo=prompt("Escolha um universo (Marvel ou DC):");
+        universo = prompt("Escolha um universo (Marvel ou DC):");
 
         /*escolha marvel inicio*/
-        if(universo=="marvel" || universo=="Marvel" || universo=="MARVEL"){
+        if (universo == "marvel" || universo == "Marvel" || universo == "MARVEL") {
             document.write("Voce escolheu Marvel");
-            heroi=prompt("Escolha um heroi (Ciclope, Estigma, Hulk, Thor, Vampira)");
-            if(heroi=="ciclope" || heroi=="Ciclope" || heroi=="CICLOPE"){
+            heroi = prompt("Escolha um heroi (Ciclope, Estigma, Hulk, Thor, Vampira)");
+            if (heroi == "ciclope" || heroi == "Ciclope" || heroi == "CICLOPE") {
                 document.write("<br>");
                 document.write("Voce escolheu Ciclope");
                 document.write("<br><br>");
                 document.write("<img src='img/marvel-ciclope.jpg' id='img'>");
             }
-            else if(heroi=="estigma" || heroi=="Estigma" || heroi=="ESTIGMA"){
+            else if (heroi == "estigma" || heroi == "Estigma" || heroi == "ESTIGMA") {
                 document.write("<br>");
                 document.write("Voce escolheu Estigma");
                 document.write("<br><br>");
                 document.write("<img src='img/marvel-estigma.jpg' id='img'>");
             }
-            else if(heroi=="hulk" || heroi=="Hulk" || heroi=="HULK"){
+            else if (heroi == "hulk" || heroi == "Hulk" || heroi == "HULK") {
                 document.write("<br>");
                 document.write("Voce escolheu Hulk");
                 document.write("<br><br>");
                 document.write("<img src='img/marvel-hulk.jpg' id='img'>");
             }
-            else if(heroi=="thor" || heroi=="Thor" || heroi=="THOR"){
+            else if (heroi == "thor" || heroi == "Thor" || heroi == "THOR") {
                 document.write("<br>");
                 document.write("Voce escolheu Thor");
                 document.write("<br><br>");
                 document.write("<img src='img/marvel-thor.jpg' id='img'>");
             }
-            else if(heroi=="vampira" || heroi=="Vampira" || heroi=="VAMPIRA"){
+            else if (heroi == "vampira" || heroi == "Vampira" || heroi == "VAMPIRA") {
                 document.write("<br>");
                 document.write("Voce escolheu Vampira");
                 document.write("<br><br>");
                 document.write("<img src='img/marvel-vampira.jpg' id='img'>");
             }
-            else{
+            else {
                 document.write("<br>");
                 document.write("Heroi invalido");
             }
         }
         /*fim marvel*/
         /*escolha dc inicio*/
-        else if(universo=="dc" || universo=="Dc" || universo=="DC"){
+        else if (universo == "dc" || universo == "Dc" || universo == "DC") {
             document.write("Voce escolheu DC");
-            heroi=prompt("Escolha um heroi (Aquaman, Batman, Ciborgue, Flash, Superman)");
-            if(heroi=="aquaman" || heroi=="Aquaman" || heroi=="AQUAMAN"){
+            heroi = prompt("Escolha um heroi (Aquaman, Batman, Ciborgue, Flash, Superman)");
+            if (heroi == "aquaman" || heroi == "Aquaman" || heroi == "AQUAMAN") {
                 document.write("<br>");
                 document.write("Voce escolheu Aquaman");
                 document.write("<br><br>");
                 document.write("<img src='img/dc-aquaman.jpg' id='img'>");
             }
-            else if(heroi=="batman" || heroi=="Batman" || heroi=="BATMAN"){
+            else if (heroi == "batman" || heroi == "Batman" || heroi == "BATMAN") {
                 document.write("<br>");
                 document.write("Voce escolheu Batman");
                 document.write("<br><br>");
                 document.write("<img src='img/dc-batman.jpg' id='img'>");
             }
-            else if(heroi=="ciborgue" || heroi=="Ciborgue" || heroi=="CIBORGUE"){
+            else if (heroi == "ciborgue" || heroi == "Ciborgue" || heroi == "CIBORGUE") {
                 document.write("<br>");
                 document.write("Voce escolheu Ciborgue");
                 document.write("<br><br>");
                 document.write("<img src='img/dc-ciborgue.jpg' id='img'>");
             }
-            else if(heroi=="flash" || heroi=="Flash" || heroi=="FLASH"){
+            else if (heroi == "flash" || heroi == "Flash" || heroi == "FLASH") {
                 document.write("<br>");
                 document.write("Voce escolheu Flash");
                 document.write("<br><br>");
                 document.write("<img src='img/dc-flash.jpg' id='img'>");
             }
-            else if(heroi=="superman" || heroi=="Superman" || heroi=="SUPERMAN"){
+            else if (heroi == "superman" || heroi == "Superman" || heroi == "SUPERMAN") {
                 document.write("<br>");
                 document.write("Voce escolheu Superman");
                 document.write("<br><br>");
                 document.write("<img src='img/dc-superman.jpg' id='img'>");
             }
-            else{
+            else {
                 document.write("<br>");
                 document.write("Heroi invalido");
             }
         }
         /*fim dc*/
-        else{
+        else {
             document.write("Universo invalido");
         }
 
-        function tamanhoImagem(largura,altura){
+        function tamanhoImagem(largura, altura) {
             document.getElementById('img').width = largura;
             document.getElementById('img').height = altura;
         }
 
-        tamanhoImagem(300,300);
+        tamanhoImagem(300, 300);
     </script>
 </body>
+
 </html>
