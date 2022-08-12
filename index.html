@@ -19,31 +19,31 @@
                 document.write("<br>");
                 document.write("Voce escolheu Ciclope");
                 document.write("<br><br>");
-                document.write("<img src='img/marvel-ciclope.jpg'>");
+                document.write("<img src='img/marvel-ciclope.jpg' id='img'>");
             }
             else if(heroi=="estigma" || heroi=="Estigma" || heroi=="ESTIGMA"){
                 document.write("<br>");
                 document.write("Voce escolheu Estigma");
                 document.write("<br><br>");
-                document.write("<img src='img/marvel-estigma.jpg'>");
+                document.write("<img src='img/marvel-estigma.jpg' id='img'>");
             }
             else if(heroi=="hulk" || heroi=="Hulk" || heroi=="HULK"){
                 document.write("<br>");
                 document.write("Voce escolheu Hulk");
                 document.write("<br><br>");
-                document.write("<img src='img/marvel-hulk.jpg'>");
+                document.write("<img src='img/marvel-hulk.jpg' id='img'>");
             }
             else if(heroi=="thor" || heroi=="Thor" || heroi=="THOR"){
                 document.write("<br>");
                 document.write("Voce escolheu Thor");
                 document.write("<br><br>");
-                document.write("<img src='img/marvel-thor.jpg'>");
+                document.write("<img src='img/marvel-thor.jpg' id='img'>");
             }
             else if(heroi=="vampira" || heroi=="Vampira" || heroi=="VAMPIRA"){
                 document.write("<br>");
                 document.write("Voce escolheu Vampira");
                 document.write("<br><br>");
-                document.write("<img src='img/marvel-vampira.jpg'>");
+                document.write("<img src='img/marvel-vampira.jpg' id='img'>");
             }
             else{
                 document.write("<br>");
@@ -59,31 +59,31 @@
                 document.write("<br>");
                 document.write("Voce escolheu Aquaman");
                 document.write("<br><br>");
-                document.write("<img src='img/dc-aquaman.jpg'>");
+                document.write("<img src='img/dc-aquaman.jpg' id='img'>");
             }
             else if(heroi=="batman" || heroi=="Batman" || heroi=="BATMAN"){
                 document.write("<br>");
                 document.write("Voce escolheu Batman");
                 document.write("<br><br>");
-                document.write("<img src='img/dc-batman.jpg'>");
+                document.write("<img src='img/dc-batman.jpg' id='img'>");
             }
             else if(heroi=="ciborgue" || heroi=="Ciborgue" || heroi=="CIBORGUE"){
                 document.write("<br>");
                 document.write("Voce escolheu Ciborgue");
                 document.write("<br><br>");
-                document.write("<img src='img/dc-ciborgue.jpg'>");
+                document.write("<img src='img/dc-ciborgue.jpg' id='img'>");
             }
             else if(heroi=="flash" || heroi=="Flash" || heroi=="FLASH"){
                 document.write("<br>");
                 document.write("Voce escolheu Flash");
                 document.write("<br><br>");
-                document.write("<img src='img/dc-flash.jpg'>");
+                document.write("<img src='img/dc-flash.jpg' id='img'>");
             }
             else if(heroi=="superman" || heroi=="Superman" || heroi=="SUPERMAN"){
                 document.write("<br>");
                 document.write("Voce escolheu Superman");
                 document.write("<br><br>");
-                document.write("<img src='img/dc-superman.jpg'>");
+                document.write("<img src='img/dc-superman.jpg' id='img'>");
             }
             else{
                 document.write("<br>");
@@ -94,6 +94,13 @@
         else{
             document.write("Universo invalido");
         }
+
+        function tamanhoImagem(largura,altura){
+            document.getElementById('img').width = largura;
+            document.getElementById('img').height = altura;
+        }
+
+        tamanhoImagem(300,300);
     </script>
 </body>
 </html>
